@@ -42,6 +42,9 @@ flights = load_flight_data(FILE_FLIGHTS);
 % --- Índices de vuelos que LLEGAN a LEBL ---
 idx = flights.arrivals;
 
+% --- Gráfica de ejemplo tipo diapositiva WP1 (demanda simulada 24h) ---
+plot_wp1_traffic_demand_example(700);
+
 % --- (a) Categoría RECAT-EU y asientos ---
 [cats, seats] = get_aircraft_info(flights.ATYP, FILE_FLEET);
 
